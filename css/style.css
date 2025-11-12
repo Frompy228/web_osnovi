@@ -1,12 +1,270 @@
-a {
-    text-decoration: none;
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
 }
 
-body {
-    background-image: url('../assets/bg_artur.jpg');
-    background-size: cover;
-    color: #FFFFFF;
+/* Блок Саши Крушинина */
+
+/* Устанавливаем шрифт и базовый цвет текста для всей страницы */
+.sk_body
+{
+    padding: 150px 0px 120px 0px;
 }
+
+/*Блок услуг*/
+/* Основной контейнер услуг: используем Flexbox для центрирования содержимого по горизонтали */
+.services {
+    display: flex;
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    padding: 30px; /* Отступы сверху/снизу и по бокам */
+}
+
+/* Заголовок секции услуг */
+.services__title {
+    margin-left: 160px; /* Смещение вправо для выравнивания с макетом */
+    font-size: 28px;
+    color: #4D533C; /* Цвет с макета */
+}
+
+/*Карточка услуги */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    padding-right: 65px; /* Отступ справа создаёт пространство между карточками */
+    width: 180px; /* Фиксированная ширина */
+    height: 230px; /* Фиксированная высота */
+    justify-content: space-between; /* Распределяет элементы (заголовок, описание, ссылка) равномерно по вертикали */
+}
+
+/* Заголовок внутри карточки */
+.service-card__title {
+    text-transform: uppercase; /* Приводим текст к верхнему регистру */
+    margin-bottom: 15px; /* Отступ снизу */
+    font-weight: 500; /* Полужирный */
+    color: #4D533C; /* Тот же, что и у основного заголовка */
+}
+
+/* Описание услуги */
+.service-card__desc {
+    font-size: 13px;
+    color: #213842; 
+    margin-bottom: 28px; /* Отступ до ссылки */
+}
+
+/* Ссылка в первой карточке */
+.services > .service-card:first-child .service-card__link {
+    font-size: 14px;
+    color: #FFD723;
+}
+
+/* Ссылки во всех остальных карточках*/
+.service-card__link {
+    font-size: 14px;
+    color: #D4D6D4;
+}
+
+/*Дополнительный блок (призыв к действию)*/
+
+/* Фоновый блок с отступами */
+.cta {
+    background-color: #fafafa;
+    padding: 70px; /* Отступы со всех сторон */
+    padding-left: 160px; /* Дополнительный отступ слева для выравнивания с макетом */
+}
+
+/* Заголовок CTA */
+.cta__title {
+    font-size: 40px;
+    color: #4D533C;
+    padding-bottom: 25px;
+}
+
+/* Ссылка в CTA */
+.cta__button {
+    color: #D4D6D4;
+    font-size: 14px;
+    text-transform: uppercase; /* Верхний регистр */
+}
+
+
+
+/* Блок Артура */
+
+.contacts {
+    font-size: 16px;
+    padding : 68px 164px 30px 165px;
+    background-image: url('../img/bg_artur.jpg');
+    background-size: cover;
+}
+.contacts__block_first {
+    display: flex;
+    height: 88px;
+    width: 452px;
+
+}
+.contacts__phone {
+    width: 178px;
+    height: 40px;
+}
+.contacts__phone_value {
+    width: 118px;
+    height: 40px;
+    white-space: nowrap;
+    color: #FFFFFF;
+    font-weight: 600;
+
+}
+.contacts__address{
+    width: 66px;
+    height: 40px;
+    margin-left: 246px;
+
+}
+.contacts__address_value {
+    width: 208px;
+    height: 40px;
+    margin-left: 246px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.contacts__line_gorizont {
+    width: 1110px;
+    height: 1px;
+    margin-top: 52px;
+    margin-bottom: 60px;
+}
+.contacts__services {
+    width: 167px;
+    height: 259px;
+}
+
+.services2{
+    width: 167px;
+    height: 38px;
+    font-weight: 500;
+}
+
+.contacts__services_value{
+    margin-top: 21px;
+    width: 159px;
+    height: 200px;
+}
+
+.contacts__title {
+}
+.contacts__item {
+}
+
+.contacts__block_second{
+    display: flex;
+}
+
+
+.contacts__help_and_advice {
+    margin-left: 100px;
+    width: 160px;
+    height: 219px;
+}
+
+.help_and_advice{
+    width: 139px;
+    height: 38px;
+    font-weight: 500;
+}
+.contacts__help_and_advice_value {
+    margin-top: 21px;
+    width: 160px;
+    height: 160px;
+}
+
+.contacts__company {
+    margin-right: 13px;
+    margin-left: 100px;
+    width: 167px;
+    height: 219px;
+}
+
+.company{
+    width: 167px;
+    height: 38px;
+    font-weight: 500;
+}
+.contacts__company_value{
+    margin-top: 21px;
+    width: 159px;
+    height: 160px;
+
+}
+.contacts__help_and_advice_value {
+    margin-top: 21px;
+    width: 159px;
+    height: 160px;
+}
+
+.contacts__line-vertical {
+}
+.contacts__get_in_touch {
+    margin-left: 110px;
+    width: 322px;
+    height: 232px;
+}
+.get_in{
+    width: 111px;
+    height: 38px;
+    font-weight: 500;
+}
+.contacts__get_in_touch_value {
+    margin-top: 23px;
+    width: 270px;
+    height: 52px;
+}
+.info_web_class{
+    margin-top: 23px;
+    margin-bottom: 24px;
+}
+.info_web{
+    font-size: 24px;
+    width: 319px;
+    height: 38px;
+    font-weight: bold;
+}
+
+
+.contacts__description {
+}
+.contacts__email {
+}
+.contacts__social-icon {
+}
+.contacts__bot {
+    display: flex;
+    width: 1110px;
+    height: 60px;
+}
+.contacts__logo-img {
+}   
+.contacts__logo-text {
+}
+.contacts__copyright {
+    margin-left: 621px;
+    white-space: nowrap;
+}
+
+.logo_eye{
+    width: 200px;
+    height: 30px;
+    white-space: nowrap;
+}
+
+/* a {
+    text-decoration: none;
+} */
 
 .text-green {
     color: #B6C197;
@@ -14,4 +272,130 @@ body {
 
 .text-white {
     color: #FFFFFF;
+}
+
+
+/* Блок Саши Макеева */
+
+.sm_body
+{
+    min-height: 100vh;
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    min-height: 8dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-left: 5rem;
+}
+
+.header__menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    margin-right: 5rem;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 92dvh;
+    padding-left: 10rem;
+    padding-right: 5rem;
+}
+
+.hero__slogan {
+    color: #fff;
+    max-width: 50rem;
+}
+
+.hero__eyebrow {
+    margin: 0 0 1.25rem 0;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+.hero__title {
+    margin: 0 0 1.5rem 0;
+    font-weight: 800;
+    line-height: 1.06;
+    font-size: 3.5rem;
+}
+
+.hero__subtitle {
+    margin: 0 0 2.25rem 0;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 1.125rem;
+    max-width: 36rem;
+}
+
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: #FFD723;
+  font-weight: 700;
+}
+
+.hero__cta-arrow {
+  width: 0;
+  height: 0;
+  border-left: 0.6rem solid #FFD723;
+  border-top: 0.36rem solid transparent;
+  border-bottom: 0.36rem solid transparent;
+  transition: transform 0.25s ease;
+}
+
+.hero__cta-body {
+  position: relative;
+  display: inline-block;
+}
+
+.hero__cta-label {
+  color: #FFD723;
+}
+
+.hero__cta-underline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.2em;
+  height: 2px;
+  background: #FFD723;
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.contacts_new{
+    background-image: url('../img/okaka.webp');
+    background-size: auto;
+    
+}
+.text-black{
+   color: black; 
+}
+
+.newelem{
+    display: flex;
+    justify-content: center;
+}
+.new-item{
+    margin-left: 10px;
+    margin-right: 10px;
 }
