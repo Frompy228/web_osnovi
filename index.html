@@ -3,14 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <title>Webovio</title>
 </head>
 <body>
+    <!-- Блок Саши Макеева -->
+    <!-- Класс хедера -->
+    <section class="sm_body">
+    <div class="header">
+        <!-- Класс лого -->
+        <div class="header__logo">
+            <!-- Гиперссылка на главную страницу в виде лого -->
+            <a href="index.html">
+                <img src="img/logo.svg" alt="Logo" width="256" height="40">
+            </a>
+        </div>
+        <!-- Гиперссылка в виде картинки бургер меню -->
+        <div class="header__menu-btn"><a href="#"><img src="img/burgermenu.svg"></a></div>
+    </div>
+    <div class="hero__container">
+        <!-- Класс контейнер для всего контента страницы -->
+        <div class="hero__slogan">
+          <!-- Выбираются хедеры в зависимости от размеров -->
+          <p class="hero__eyebrow">A place where</p>
+          <h1 class="hero__title">A creative agency<br>for redemptive<br>brands</h1>
+          <p class="hero__subtitle">
+            Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.
+          </p>
+          <!-- Создана гиперссылка и внутрь помещена картинка рядом с текстом -->
+          <a class="hero__cta" href="#">
+            <span class="hero__cta-arrow" aria-hidden="true"></span>
+            <span class="hero__cta-body">
+                <span class="hero__cta-label">Get in touch</span>
+                <span class="hero__cta-underline" aria-hidden="true"></span>
+            </span>
+          </a>
+        </div>
+    </div>
+    </section>
+    
+    <!-- Блок Саши Крушинина -->
+
+    <section class="sk_body">
+    <!-- Заголовок услуг -->
+    <h2 class="services__title">Deation & Evaluation - Best Way<br>to Kick off Your Product idea</h2>
+
+    <!-- Основной блок с перечнем услуг -->
+    <main class="services">
+        <!-- Карточка услуги: Product Design Sprint -->
+        <section class="service-card">
+            <h3 class="service-card__title">PRODUCT<br>DESIGN SPRINT</h3>
+            <p class="service-card__desc">A five-day workshop that will help you answer crucial business questions</p>
+            <a href="#" class="service-card__link">
+                <svg width="8" height="8" viewBox="-1 0 8 12" fill="currentColor">
+                    <path d="M8 5L0 0v10z"/>
+                </svg>
+                Read More
+            </a>
+        </section>
+
+        <!-- Карточка услуги: Scoping Session -->
+        <section class="service-card">
+            <h3 class="service-card__title">Scoping<br>Session</h3>
+            <p class="service-card__desc">A workshop aimed at shaping your business idea, answering questions regarding project planning</p>
+            <a href="#" class="service-card__link">
+                <svg width="8" height="8" viewBox="-1 0 8 12" fill="currentColor">
+                    <path d="M8 5L0 0v10z"/>
+                </svg>
+                Read More
+            </a>
+        </section>
+
+        <!-- Карточка услуги: UX Review -->
+        <section class="service-card">
+            <h3 class="service-card__title">UX<br>REVIEW</h3>
+            <p class="service-card__desc">An evaluation which will help you radically improve your product.</p>
+            <a href="#" class="service-card__link">
+                <svg width="8" height="8" viewBox="-1 0 8 12" fill="currentColor">
+                    <path d="M8 5L0 0v10z"/>
+                </svg>
+                Read More
+            </a>
+        </section>
+
+        <!-- Карточка услуги: Code Review -->
+        <section class="service-card">
+            <h3 class="service-card__title">CODE<br>REVIEW</h3>
+            <p class="service-card__desc">Do you know what one of the key secrets of success is what makes people successful in business</p>
+            <a href="#" class="service-card__link">
+                <svg width="8" height="8" viewBox="-1 0 8 12" fill="currentColor">
+                    <path d="M8 5L0 0v10z"/>
+                </svg>
+                Read More
+            </a>
+        </section>
+    </main>
+    </section>
+
+    <!-- Призыв к действию (Call To Action) -->
+    <aside class="cta">
+        <h1 class="cta__title">Let’s make something<br>amazing together.</h1>
+        <a href="#" class="cta__button">
+                <svg width="8" height="8" viewBox="-1 0 8 12" fill="currentColor">
+                    <path d="M8 5L0 0v10z"/>
+                </svg>
+                LET’S GET STARTED
+            </a>
+    </aside>
+
+    <!-- Блок Артура -->
+
     <section class="contacts">
         <div class="contacts__block_first">
             <div class="contacts__item">
@@ -23,14 +129,14 @@
             </div>
         </div>
     
-        <img src="assets/line_gorizont_artur.png" alt="" class="contacts__line_gorizont">
+        <img src="img/line_gorizont_artur.png" alt="" class="contacts__line_gorizont">
         
         
         <div class="contacts__block_second">
 
 
         <div class="contacts__services">
-            <article class="services text-white">SERVICES</article>
+            <article class="services2 text-white">SERVICES</article>
             <div class="contacts__services_value">
                 <article class="contacts__item text-green">Strategy Design</article>
                 <article class="contacts__item text-green">Product Design</article>
@@ -59,7 +165,7 @@
             <article class="contacts__item text-green">Jobs</article>
             </div>
         </div>
-        <img src="assets/line_vertical_artur.png" alt="" class="contacts__line-vertical">
+        <img src="img/line_vertical_artur.png" alt="" class="contacts__line-vertical">
 
         <div class="contacts__get_in_touch">
             <article class="get_in text-white">GET IN TOUCH</article>
@@ -68,28 +174,46 @@
             <div class="info_web_class">
             <article class="info_web text-white">info.webovio@gmail.com</article>
             <a href="https://www.youtube.com/watch?v=Cxmvq1MCR3c" target="_blank">
-            <img src="assets/oval_green_artur.png" alt="Facebook" class="contacts__social-icon"></a>
+            <img src="img/oval_green_artur.png" alt="Facebook" class="contacts__social-icon"></a>
             <a href="https://www.youtube.com/watch?v=Cxmvq1MCR3c" target="_blank">
-            <img src="assets/oval_green_artur.png" alt="Social" class="contacts__social-icon"></a>
+            <img src="img/oval_green_artur.png" alt="Social" class="contacts__social-icon"></a>
             <a href="https://www.youtube.com/watch?v=Cxmvq1MCR3c" target="_blank">
-            <img src="assets/oval_yellow_artur.png" alt="Social" class="contacts__social-icon"></a>
+            <img src="img/oval_yellow_artur.png" alt="Social" class="contacts__social-icon"></a>
             <a href="https://www.youtube.com/watch?v=Cxmvq1MCR3c" target="_blank">
-            <img src="assets/oval_green_artur.png" alt="Social" class="contacts__social-icon"></a>
+            <img src="img/oval_green_artur.png" alt="Social" class="contacts__social-icon"></a>
             </div>
             </div>
         </div>
 
         </div>
-        <img src="assets/line_gorizont_artur.png" alt="" class="contacts__line_gorizont">
+        <img src="img/line_gorizont_artur.png" alt="" class="contacts__line_gorizont">
         
         
         <div class="contacts__bot">
             <div class="logo_eye">
-            <img src="assets/logo_artur.png" alt="Logo" class="contacts__logo-img">
-            <img src="assets/logo_text_artur.png" alt="Webovio" class="contacts__logo-text">
+            <img src="img/logo_artur.png" alt="Logo" class="contacts__logo-img">
+            <img src="img/logo_text_artur.png" alt="Webovio" class="contacts__logo-text">
             </div>
             <article class="contacts__copyright text-green">© 2020@webovio. All Rights Reserved.</article>
         </div>
     </section>
+    <form action="#">
+        <input type="button" value="click me" class="my_btn">
+    </form>
+
+    <input type="button" id="addButton" value="Добавить элемент">
+    <div id="container" class="newelem">
+    </div>
+
+
+
+
+
+
+
+    
+    <script src="/index.js"></script>
+
+    
 </body>
 </html>
