@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('../assets/bg_artur.jpg');
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.text-green {
+    color: #B6C197;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
